@@ -40,7 +40,7 @@ choice_exerciseneeds = (
 )
 
 
-class Breed(models.Modes):
+class Breed(models.Model):
     name = models.CharField(max_length=23)
     size = models.CharField(max_length=7, choices=choice_sizes)
     friendliness = models.IntegerField(choices=choice_friendliness)
